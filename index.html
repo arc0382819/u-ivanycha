@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кафе «У Иваныча» — домашняя кухня в Ломоносове</title>
+  <meta name="description" content="Кафе «У Иваныча» в Ломоносове, напротив входа в парк Ораниенбаум. Пельмени и вареники ручной лепки, чебуреки с бульоном, борщ, хачапури. Ежедневно 11:00–23:00. Банкеты, доставка.">
+  <!-- Превью ссылки в ВК, Телеграме и WhatsApp. Картинка 1200×630: img/og.jpg.
+       TODO: при запуске на своём домене заменить адрес демо в og:url и og:image -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Кафе «У Иваныча»">
+  <meta property="og:url" content="https://arc0382819.github.io/u-ivanycha/">
+  <meta property="og:title" content="Кафе «У Иваныча» — домашняя кухня в Ломоносове">
+  <meta property="og:description" content="Напротив входа в парк Ораниенбаум. Пельмени ручной лепки, чебуреки с бульоном, борщ. Ежедневно 11:00–23:00.">
+  <meta property="og:image" content="https://arc0382819.github.io/u-ivanycha/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: это демо для владельца, поисковикам запрещено его индексировать.
+       При официальном запуске удалить эту строку и Disallow в robots.txt -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#2a1d15">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/Bitter-800-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/GolosText-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Кафе «У Иваныча»",
+    "servesCuisine": ["Русская", "Домашняя", "Грузинская"],
+    "telephone": "+7-911-920-79-79",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Первомайская ул., 3Б",
+      "addressLocality": "Ломоносов",
+      "addressRegion": "Санкт-Петербург",
+      "addressCountry": "RU"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 59.915987, "longitude": 29.763498 },
+    "openingHours": "Mo-Su 11:00-23:00",
+    "sameAs": ["https://vk.com/yivanychaa"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Перейти к содержанию</a>
+
+  <header class="top">
+    <div class="top__in wrap">
+      <a class="logo" href="#" aria-label="Кафе «У Иваныча», в начало страницы">
+        <span class="logo__small">кафе</span>
+        <span class="logo__name">У Иваныча</span>
+      </a>
+      <nav class="top__nav" aria-label="Разделы">
+        <a href="#menu">Меню</a>
+        <a href="#bankety">Банкеты</a>
+        <a href="#pyshka">Пышечная</a>
+        <a href="#otzyvy">Отзывы</a>
+        <a href="#kontakty">Контакты</a>
+      </nav>
+      <a class="btn btn--call top__call" href="tel:+79119207979">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+        <span>Позвонить</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Главный экран -->
+    <section class="hero" aria-labelledby="hero-h">
+      <img class="hero__img" src="img/hero-veranda.webp"
+           srcset="img/hero-veranda-800.webp 800w, img/hero-veranda.webp 1280w"
+           sizes="100vw" width="1280" height="854" fetchpriority="high"
+           alt="Летняя веранда кафе «У Иваныча» вечером, в гирляндах, среди елей">
+      <div class="hero__in wrap">
+        <p class="hero__kicker">Ломоносов · напротив входа в парк Ораниенбаум</p>
+        <h1 id="hero-h">Кафе «У&nbsp;Иваныча»</h1>
+        <p class="hero__lead">Домашняя кухня у парка: пельмени и вареники ручной лепки, чебуреки с говяжьим бульоном, борщ и шашлык.</p>
+        <ul class="chips" aria-label="Коротко о кафе">
+          <li class="chip"><span class="chip__star" aria-hidden="true">★</span> 4,9 на Яндекс Картах · 580 оценок</li>
+          <li class="chip">«Хорошее место 2026»</li>
+          <li class="chip chip--status" data-open-status data-open="11:00" data-close="23:00">Ежедневно 11:00–23:00</li>
+        </ul>
+        <div class="hero__btns">
+          <a class="btn btn--call btn--big" href="tel:+79119207979">Позвонить</a>
+          <a class="btn btn--light btn--big" href="#menu">Смотреть меню</a>
+          <a class="btn btn--ghost btn--big" href="https://yandex.ru/maps/?rtext=~59.915987,29.763498&amp;rtype=auto" target="_blank" rel="noopener">Как добраться</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- О кафе -->
+    <section class="sec wrap about" aria-labelledby="about-h">
+      <div class="about__text">
+        <h2 id="about-h">Кормим по-домашнему уже 25&nbsp;лет</h2>
+        <p>Пельмени и вареники лепим руками, борщ подаём со сметаной, салом и зелёным луком, а чебуреки — с горячим говяжьим бульоном. После прогулки по Ораниенбауму к нам удобно зайти погреться: вход в парк прямо напротив.</p>
+        <p>Можно посидеть в уютном зале, на летней террасе или на веранде, взять еду с собой или заказать доставку.</p>
+      </div>
+      <ul class="feats">
+        <li class="feat"><b>Летняя терраса</b><span>и зимняя веранда в саду</span></li>
+        <li class="feat"><b>Банкетный зал</b><span>два этажа, танцпол</span></li>
+        <li class="feat"><b>Детское меню</b><span>и детский стульчик</span></li>
+        <li class="feat"><b>Бесплатная парковка</b><span>для гостей кафе</span></li>
+      </ul>
+    </section>
+
+    <!-- Фирменное -->
+    <section class="sec sec--tint" aria-labelledby="hits-h">
+      <div class="wrap">
+        <h2 id="hits-h">Что попробовать</h2>
+        <ul class="hits">
+          <li class="hit">
+            <img src="img/chebureki-bulon-800.webp" width="600" height="800" loading="lazy" alt="Два чебурека с чашкой говяжьего бульона">
+            <div class="hit__body"><b>Фирменное от Иваныча: чебуреки с говяжьим бульоном</b><span>2 шт. · 180 г / 250 мл</span><em>550 ₽</em></div>
+          </li>
+          <li class="hit">
+            <img src="img/pelmeni-800.webp" width="600" height="800" loading="lazy" alt="Пельмени ручной лепки с укропом">
+            <div class="hit__body"><b>Пельмени ручной лепки</b><span>8 видов, по 9 штук</span><em>от 410 ₽</em></div>
+          </li>
+          <li class="hit">
+            <img src="img/hachapuri-800.webp" width="600" height="800" loading="lazy" alt="Хачапури по-аджарски с яйцом">
+            <div class="hit__body"><b>Хачапури по-аджарски</b><span>330 г · три вида сыра, яйцо</span><em>560 ₽</em></div>
+          </li>
+          <li class="hit">
+            <img src="img/seld-800.webp" width="450" height="800" loading="lazy" alt="Сельдь с картофелем и красным луком">
+            <div class="hit__body"><b>Сельдь бочковая с картофелем</b><span>190 г · с луком</span><em>420 ₽</em></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Меню -->
+    <section class="sec wrap" id="menu" aria-labelledby="menu-h">
+      <h2 id="menu-h">Меню</h2>
+      <p class="note">Цены по меню кафе, сентябрь 2026.</p>
+
+      <div class="tabs">
+        <div class="tablist" role="tablist" focusgroup="tablist nomemory" aria-label="Разделы меню">
+          <button type="button" role="tab" id="t-soups" aria-selected="true" focusgroupstart>Первые блюда</button>
+          <button type="button" role="tab" id="t-hot" aria-selected="false">Горячее</button>
+          <button type="button" role="tab" id="t-pelmeni" aria-selected="false">Пельмени и вареники</button>
+          <button type="button" role="tab" id="t-dough" aria-selected="false">Хачапури и пицца</button>
+          <button type="button" role="tab" id="t-salads" aria-selected="false">Салаты</button>
+          <button type="button" role="tab" id="t-cold" aria-selected="false">Закуски</button>
+          <button type="button" role="tab" id="t-pasta" aria-selected="false">Паста</button>
+          <button type="button" role="tab" id="t-shashlik" aria-selected="false">Шашлык</button>
+          <button type="button" role="tab" id="t-sides" aria-selected="false">Гарниры и соусы</button>
+          <button type="button" role="tab" id="t-kids" aria-selected="false">Детское</button>
+          <button type="button" role="tab" id="t-desserts" aria-selected="false">Десерты</button>
+          <button type="button" role="tab" id="t-drinks" aria-selected="false">Чай и кофе</button>
+        </div>
+
+        <div class="panels">
+          <div role="tabpanel" aria-labelledby="t-soups" tabindex="0">
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Чебуреки с говяжьим бульоном, фирменное от Иваныча</b><span class="mi__p">550 ₽</span></div><p>2 шт. · 180 г / 250 мл</p></li>
+              <li class="mi"><div class="mi__row"><b>Домашний борщ с говядиной</b><span class="mi__p">430 ₽</span></div><p>350 г · со сметаной, зеленью, салом, зелёным луком и хлебом</p></li>
+              <li class="mi"><div class="mi__row"><b>Грибной суп со сметаной и зеленью</b><span class="mi__p">390 ₽</span></div><p>350 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Шурпа с бараниной</b><span class="mi__p">520 ₽</span></div><p>450 г · с зеленью и хлебом</p></li>
+              <li class="mi"><div class="mi__row"><b>Уха домашняя</b><span class="mi__p">480 ₽</span></div><p>350 г · донская уха с зеленью</p></li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="t-hot" hidden="until-found">
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Свинина по-старорусски с грибным соусом</b><span class="mi__p">520 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Долма с говядиной</b><span class="mi__p">510 ₽</span></div><p>180 г / 30 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Домашняя котлета с пюре</b><span class="mi__p">450 ₽</span></div><p>150 г / 100 г · говядина, свинина</p></li>
+              <li class="mi"><div class="mi__row"><b>Чебурек с мясом и соусом от Иваныча</b><span class="mi__p">490 ₽</span></div><p>2 шт. · 180 г / 30 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Чебурек с сыром и зеленью</b><span class="mi__p">490 ₽</span></div><p>2 шт. · 180 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Чебурек с цыплёнком и зеленью</b><span class="mi__p">470 ₽</span></div><p>2 шт. · 180 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Уйгурский лагман с говядиной</b><span class="mi__p">490 ₽</span></div><p>300 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Чкмерули из курицы по-грузински</b><span class="mi__p">490 ₽</span></div><p>220 г · куриные бёдра, запечённые в сливочно-чесночном соусе с кинзой</p></li>
+              <li class="mi"><div class="mi__row"><b>Чашушули</b><span class="mi__p">650 ₽</span></div><p>180 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Судак по-ростовски от Иваныча в сметанном соусе</b><span class="mi__p">590 ₽</span></div><p>филе, 220 г</p></li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="t-pelmeni" hidden="until-found">
+            <h3 class="mhead">Пельмени ручной лепки <small>9 шт., подаются с зеленью</small></h3>
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Пельмени от Иваныча</b><span class="mi__p">530 ₽</span></div><p>баранина, говядина, сливочное масло</p></li>
+              <li class="mi"><div class="mi__row"><b>Боярские</b><span class="mi__p">530 ₽</span></div><p>баранина, сливочное масло</p></li>
+              <li class="mi"><div class="mi__row"><b>Уральские</b><span class="mi__p">490 ₽</span></div><p>говядина, свинина, баранина, сливочное масло</p></li>
+              <li class="mi"><div class="mi__row"><b>Сибирские</b><span class="mi__p">490 ₽</span></div><p>говядина, свинина, сливочное масло</p></li>
+              <li class="mi"><div class="mi__row"><b>Деревенские</b><span class="mi__p">490 ₽</span></div><p>говядина, хрен, сливочное масло</p></li>
+              <li class="mi"><div class="mi__row"><b>Царские</b><span class="mi__p">490 ₽</span></div><p>лососевые рыбы, сливочное масло</p></li>
+              <li class="mi"><div class="mi__row"><b>«Сырная сказка»</b><span class="mi__p">420 ₽</span></div><p>сулугуни, кинза, сливочное масло</p></li>
+              <li class="mi"><div class="mi__row"><b>«Цыпочки»</b><span class="mi__p">410 ₽</span></div><p>куриное филе, сливочное масло</p></li>
+            </ul>
+            <h3 class="mhead">Вареники ручной лепки <small>7 шт.</small></h3>
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>С вишней</b><span class="mi__p">390 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>С грибами</b><span class="mi__p">310 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>С картофелем</b><span class="mi__p">280 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>С творогом</b><span class="mi__p">260 ₽</span></div></li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="t-dough" hidden="until-found">
+            <h3 class="mhead">Хачапури</h3>
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>По-аджарски</b><span class="mi__p">560 ₽</span></div><p>330 г · лодочка из теста с тремя видами сыра и яйцом, сливочное масло</p></li>
+              <li class="mi"><div class="mi__row"><b>«Аджарик»</b><span class="mi__p">380 ₽</span></div><p>250 г</p></li>
+              <li class="mi"><div class="mi__row"><b>По-мегрельски</b><span class="mi__p">620 ₽</span></div><p>450 г · тесто, сырный микс, сливочное масло</p></li>
+              <li class="mi"><div class="mi__row"><b>Со шпинатом</b><span class="mi__p">620 ₽</span></div><p>450 г · тесто, сырный микс, шпинат, сливочное масло</p></li>
+            </ul>
+            <h3 class="mhead">Пицца <small>30 см</small></h3>
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Маргарита</b><span class="mi__p">690 ₽</span></div><p>томатный соус, помидор, моцарелла, орегано</p></li>
+              <li class="mi"><div class="mi__row"><b>Прошутто фунги</b><span class="mi__p">680 ₽</span></div><p>томатный соус, ветчина, шампиньоны, моцарелла, зелень</p></li>
+              <li class="mi"><div class="mi__row"><b>Пепперони</b><span class="mi__p">750 ₽</span></div><p>томатный соус, моцарелла, пепперони, орегано</p></li>
+              <li class="mi"><div class="mi__row"><b>Гавайская</b><span class="mi__p">770 ₽</span></div><p>томатный соус, моцарелла, курица, ананас</p></li>
+              <li class="mi"><div class="mi__row"><b>Четыре сыра</b><span class="mi__p">800 ₽</span></div><p>сливочный соус, моцарелла, чеддер, дорблю, пармезан</p></li>
+              <li class="mi"><div class="mi__row"><b>Поло песто</b><span class="mi__p">850 ₽</span></div><p>томатный соус, моцарелла, шампиньоны, курица, песто, маслины, брынза</p></li>
+              <li class="mi"><div class="mi__row"><b>Карбонара</b><span class="mi__p">900 ₽</span></div><p>сливочный соус, бекон, яйцо, пармезан, моцарелла</p></li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="t-salads" hidden="until-found">
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Салат от Иваныча</b><span class="mi__p">490 ₽</span></div><p>170 г · картофель, морковь, солёный огурец, сырокопчёная колбаса, зелёный горошек, пармезан, майонез</p></li>
+              <li class="mi"><div class="mi__row"><b>Цезарь с курицей</b><span class="mi__p">510 ₽</span></div><p>190 г · салат «Романо», куриное филе, томат, пармезан, пшеничные крутоны, заправка «Цезарь»</p></li>
+              <li class="mi"><div class="mi__row"><b>Капри</b><span class="mi__p">450 ₽</span></div><p>180 г · «Айсберг», куриная грудка, ананас, грецкий орех, майонез</p></li>
+              <li class="mi"><div class="mi__row"><b>С говядиной</b><span class="mi__p">610 ₽</span></div><p>190 г · говядина, маринованный огурец, красный лук, салатная заправка</p></li>
+              <li class="mi"><div class="mi__row"><b>С рукколой и сёмгой</b><span class="mi__p">690 ₽</span></div><p>190 г · руккола, сёмга, томат, огурец, заправка с лимоном</p></li>
+              <li class="mi"><div class="mi__row"><b>С хрустящими баклажанами</b><span class="mi__p">590 ₽</span></div><p>190 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Греческий</b><span class="mi__p">440 ₽</span></div><p>190 г · томаты, сладкий перец, фета, красный лук, огурцы, маслины</p></li>
+              <li class="mi"><div class="mi__row"><b>Грузинский</b><span class="mi__p">420 ₽</span></div><p>190 г · томаты, красный лук, фасоль, сулугуни</p></li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="t-cold" hidden="until-found">
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Сельдь бочковая с картофелем и луком</b><span class="mi__p">420 ₽</span></div><p>190 г</p></li>
+            </ul>
+            <h3 class="mhead">Мясная коллекция <small>80 г</small></h3>
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Домашний рулет из свинины</b><span class="mi__p">300 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Домашний рулет из индейки</b><span class="mi__p">300 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Домашний рулет из куриного филе бедра</b><span class="mi__p">260 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Сырокопчёная колбаса</b><span class="mi__p">280 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Домашнее сало</b><span class="mi__p">130 ₽</span></div><p>50 г</p></li>
+            </ul>
+            <h3 class="mhead">Сырная нарезка <small>80 г</small></h3>
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Сулугуни</b><span class="mi__p">210 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Чеддер</b><span class="mi__p">290 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Сыр с грецким орехом</b><span class="mi__p">210 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Сыр копчёный (косичка)</b><span class="mi__p">190 ₽</span></div></li>
+            </ul>
+            <h3 class="mhead">Соленья <small>80 г</small></h3>
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Огурцы солёные</b><span class="mi__p">90 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Черемша маринованная</b><span class="mi__p">90 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Квашеная капуста с клюквой</b><span class="mi__p">120 ₽</span></div><p>с ароматным маслом</p></li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="t-pasta" hidden="until-found">
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Паста болоньезе</b><span class="mi__p">490 ₽</span></div><p>300 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Феттучини с курицей и грибами в сливочном соусе</b><span class="mi__p">550 ₽</span></div><p>300 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Сырные тальолини с беконом</b><span class="mi__p">550 ₽</span></div><p>300 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Спагетти с креветками в соусе песто</b><span class="mi__p">580 ₽</span></div><p>280 г</p></li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="t-shashlik" hidden="until-found">
+            <!-- TODO: цены шашлыка взяты из раздела «Товары» группы ВК, в бумажном меню их нет. Уточнить у владельца. -->
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Свиной шашлык</b><span class="mi__p">520 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Куриный шашлык</b><span class="mi__p">450 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Шашлык из индейки</b><span class="mi__p">560 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Коллекция фирменного шашлыка</b><span class="mi__p">1 100 ₽</span></div></li>
+            </ul>
+            <p class="note">Шашлык готовим на мангале. Наличие и цены уточняйте по телефону.</p>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="t-sides" hidden="until-found">
+            <h3 class="mhead">Гарниры</h3>
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Картофель фри</b><span class="mi__p">180 ₽</span></div><p>120 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Картофель по-деревенски</b><span class="mi__p">180 ₽</span></div><p>120 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Картофельное пюре с зеленью</b><span class="mi__p">180 ₽</span></div><p>130 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Рис со сливочным или оливковым маслом</b><span class="mi__p">160 ₽</span></div><p>130 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Свежие овощи</b><span class="mi__p">440 ₽</span></div><p>300 г</p></li>
+            </ul>
+            <h3 class="mhead">Соусы <small>30 г</small></h3>
+            <ul class="mlist mlist--two">
+              <li class="mi"><div class="mi__row"><b>Домашняя аджика</b><span class="mi__p">100 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Чесночный</b><span class="mi__p">100 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Сметана</b><span class="mi__p">100 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Барбекю</b><span class="mi__p">90 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Сырный</b><span class="mi__p">90 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Кисло-сладкий</b><span class="mi__p">90 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Кетчуп</b><span class="mi__p">90 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Хрен</b><span class="mi__p">60 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Горчица</b><span class="mi__p">60 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Майонез</b><span class="mi__p">60 ₽</span></div></li>
+            </ul>
+            <h3 class="mhead">Хлеб</h3>
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Хлебная корзина</b><span class="mi__p">210 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Ржано-пшеничный хлеб</b><span class="mi__p">50 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Армянский лаваш</b><span class="mi__p">50 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Сливочное масло</b><span class="mi__p">80 ₽</span></div></li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="t-kids" hidden="until-found">
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Домашняя куриная котлета с пюре</b><span class="mi__p">360 ₽</span></div><p>100 г / 100 г</p></li>
+              <li class="mi"><div class="mi__row"><b>Пельмени «Цыпочки» со сметаной</b><span class="mi__p">250 ₽</span></div><p>5 шт., без зелени</p></li>
+              <li class="mi"><div class="mi__row"><b>Куриный бульон с лапшой</b><span class="mi__p">310 ₽</span></div><p>300 г · бульон, лапша, отварная курочка, яйцо</p></li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="t-desserts" hidden="until-found">
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Домашний яблочный штрудель с мороженым</b><span class="mi__p">370 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Мороженое в ассортименте</b><span class="mi__p">250 ₽</span></div><p>два шарика</p></li>
+              <li class="mi"><div class="mi__row"><b>Запечённое яблоко с грецким орехом и мёдом</b><span class="mi__p">180 ₽</span></div></li>
+            </ul>
+          </div>
+
+          <div role="tabpanel" aria-labelledby="t-drinks" hidden="until-found">
+            <h3 class="mhead">Авторские чаи <small>600 мл</small></h3>
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>С облепихой и мятой</b><span class="mi__p">290 ₽</span></div><p>с добавлением чёрного чая</p></li>
+              <li class="mi"><div class="mi__row"><b>Облепиховый с малиной</b><span class="mi__p">290 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Грушевый с жасмином</b><span class="mi__p">290 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>С клюквой и имбирём</b><span class="mi__p">290 ₽</span></div></li>
+            </ul>
+            <h3 class="mhead">Чайная карта <small>600 мл</small></h3>
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Классический чёрный</b><span class="mi__p">250 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Чёрный с бергамотом</b><span class="mi__p">250 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Чёрный с чабрецом</b><span class="mi__p">250 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Чёрный с клубникой</b><span class="mi__p">270 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Классический зелёный</b><span class="mi__p">270 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Тропический зелёный</b><span class="mi__p">270 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>Каркаде</b><span class="mi__p">250 ₽</span></div></li>
+              <li class="mi"><div class="mi__row"><b>«1001 ночь»</b><span class="mi__p">270 ₽</span></div><p>на основе чёрного и зелёного чая</p></li>
+            </ul>
+            <p class="note">К чаю: мята 50 ₽, жасмин 60 ₽, ромашка 60 ₽, лимон 60 ₽, мёд 100 ₽.</p>
+            <h3 class="mhead">Кофе и какао</h3>
+            <ul class="mlist">
+              <li class="mi"><div class="mi__row"><b>Эспрессо</b><span class="mi__p">170 ₽</span></div><p>50 мл</p></li>
+              <li class="mi"><div class="mi__row"><b>Двойной эспрессо</b><span class="mi__p">190 / 320 ₽</span></div><p>30 / 100 мл</p></li>
+              <li class="mi"><div class="mi__row"><b>Американо</b><span class="mi__p">190 ₽</span></div><p>120 мл</p></li>
+              <li class="mi"><div class="mi__row"><b>Капучино</b><span class="mi__p">230 ₽</span></div><p>130 мл</p></li>
+              <li class="mi"><div class="mi__row"><b>Гляссе</b><span class="mi__p">250 ₽</span></div><p>120 мл</p></li>
+              <li class="mi"><div class="mi__row"><b>Латте</b><span class="mi__p">260 ₽</span></div><p>200 мл</p></li>
+              <li class="mi"><div class="mi__row"><b>Какао</b><span class="mi__p">220 ₽</span></div><p>200 мл</p></li>
+            </ul>
+            <p class="note">Есть кофе с собой.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Доставка и с собой -->
+    <section class="sec wrap" aria-labelledby="dost-h">
+      <div class="duo">
+        <div class="card card--dark">
+          <h2 id="dost-h">Доставка</h2>
+          <p>Привезём наши блюда домой: работают свои курьеры. Заказ по телефону, условия доставки подскажет администратор.</p>
+          <a class="btn btn--call" href="tel:+79119207979">Заказать по телефону</a>
+        </div>
+        <div class="card">
+          <h2>С собой</h2>
+          <p>Блюда упакуем навынос, ланч-бокс стоит 30&nbsp;₽. Есть кофе и чай с собой, удобно взять на прогулку в парк.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Банкеты -->
+    <section class="sec sec--tint" id="bankety" aria-labelledby="bank-h">
+      <div class="wrap bank">
+        <div class="bank__text">
+          <h2 id="bank-h">Банкеты и праздники</h2>
+          <p>Банкетный зал на два этажа с танцполом. Проводим свадьбы, дни рождения и юбилеи, корпоративы, крестины и поминальные обеды. Можно забронировать стол или арендовать зал целиком.</p>
+          <ul class="prices">
+            <li><span>Поминальный обед</span><b>от 2 500 ₽</b></li>
+            <li><span>Корпоратив, крестины, банкет</span><b>от 3 500 ₽</b></li>
+            <li><span>Свадьба, венчание</span><b>от 3 700 ₽</b></li>
+            <li><span>День рождения, юбилей</span><b>от 3 700 ₽</b></li>
+            <li><span>Бронь стола до 10 человек, аренда зала</span><b>по договорённости</b></li>
+          </ul>
+          <p class="note">Точную стоимость и меню праздника уточняйте по телефону.</p>
+          <div class="btnrow">
+            <a class="btn btn--call" href="tel:+79119207979">Позвонить</a>
+            <a class="btn btn--ghost-dark" href="https://vk.me/yivanychaa" target="_blank" rel="noopener">Написать в ВК</a>
+          </div>
+        </div>
+        <div class="bank__side">
+          <img src="img/zal-dva-etazha-800.webp" srcset="img/zal-dva-etazha-800.webp 600w, img/zal-dva-etazha.webp 1200w" sizes="(min-width: 860px) 420px, 100vw" width="600" height="800" loading="lazy" alt="Банкетный зал на два этажа с деревянной балюстрадой">
+          <div class="card card--small">
+            <b>Туристическим группам</b>
+            <p>Кормим группы комплексными обедами: салат, первое, горячее с гарниром, напитки, хлеб и сладкое.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Пышечная -->
+    <section class="sec wrap pyshka" id="pyshka" aria-labelledby="pyshka-h">
+      <div class="pyshka__pics">
+        <img src="img/pyshka-zaporozhec-800.webp" width="600" height="800" loading="lazy" alt="Жёлтый «Запорожец», расписанный пышками, у входа в пышечную">
+        <img src="img/pyshki-800.webp" width="600" height="800" loading="lazy" alt="Тарелка питерских пышек с сахарной пудрой">
+      </div>
+      <div class="pyshka__text">
+        <p class="kicker">Соседний дом, Первомайская 3В</p>
+        <h2 id="pyshka-h">«Пышка &amp; Чебурек»</h2>
+        <p>Наша пышечная напротив входа в парк Ораниенбаум. Горячие питерские пышки с сахарной пудрой, чебуреки, кофе и чай с собой.</p>
+        <ul class="facts">
+          <li><span>Часы работы</span><b data-open-status data-open="10:30" data-close="20:00">ежедневно 10:30–20:00</b></li>
+          <li><span>Рейтинг</span><b>★ 5,0 на Яндекс Картах</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="sec sec--tint" aria-labelledby="gal-h">
+      <div class="wrap">
+        <h2 id="gal-h">Как у нас</h2>
+        <ul class="gal">
+          <li class="gal__big"><img src="img/sad-prud-800.webp" srcset="img/sad-prud-800.webp 400w, img/sad-prud.webp 800w" sizes="(min-width: 860px) 360px, 50vw" width="400" height="800" loading="lazy" alt="Веранда кафе у пруда, окружённого елями"></li>
+          <li><img src="img/zal-800.webp" width="800" height="600" loading="lazy" alt="Зал с мягкими креслами и гирляндами под потолком"></li>
+          <li><img src="img/veranda-stol-800.webp" width="800" height="600" loading="lazy" alt="Столик на веранде с подушками и занавесками"></li>
+          <li><img src="img/lestnica-800.webp" width="600" height="800" loading="lazy" alt="Лестница на второй этаж с подсветкой и вывеской «У Иваныча»"></li>
+          <li><img src="img/fasad-800.webp" width="600" height="800" loading="lazy" alt="Фасад с вывеской «Кафе у Иваныча»"></li>
+          <li><img src="img/stol-pelmeni-800.webp" width="450" height="800" loading="lazy" alt="Сельдь с картофелем и пельмени на столе"></li>
+          <li><img src="img/stol-picca-800.webp" width="600" height="800" loading="lazy" alt="Пицца и хачапури на столе"></li>        </ul>
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="sec wrap" id="otzyvy" aria-labelledby="otz-h">
+      <div class="otz__head">
+        <h2 id="otz-h">Что пишут гости</h2>
+        <p class="score"><b>4,9</b> <span class="stars" aria-hidden="true">★★★★★</span><span>580 оценок на Яндекс Картах</span></p>
+      </div>
+      <ul class="reviews">
+        <li class="rev"><blockquote>Очень всё не сложно… по-домашнему, по-простому. После прогулки в парке — очень хорошо тут погреться. Милый интерьер. Чисто.</blockquote><p>Ольга · ноябрь 2026</p></li>
+        <li class="rev"><blockquote>Очень довольны выбором заведения для обеда после долгой экскурсии в парке. Все заказанные блюда принесли быстро, еда действительно вкусная… Цены адекватные. Спасибо!</blockquote><p>Анна · октябрь 2026</p></li>
+        <li class="rev"><blockquote>Обалденные пельмешки! Очень удобно после прогулки прогреться и насладиться уютной атмосферой.</blockquote><p>Ирина · октябрь 2026</p></li>
+        <li class="rev"><blockquote>Меню разнообразное… Понравились абсолютно все заказанные блюда, в том числе лагман и пельмени ручной работы. Спасибо! У вас супер!</blockquote><p>Лилия · октябрь 2026</p></li>
+        <li class="rev"><blockquote>Уютное место, приятная музыка, хорошее обслуживание. Вкусно и не дорого.</blockquote><p>Женя · ноябрь 2026</p></li>
+        <li class="rev"><blockquote>Очень вкусно, бюджетно и есть парковка для посетителей.</blockquote><p>Слава · октябрь 2026</p></li>
+      </ul>
+      <a class="btn btn--ghost-dark" href="https://yandex.ru/maps/org/u_ivanycha/212209526785/reviews/" target="_blank" rel="noopener">Все отзывы на Яндекс Картах</a>
+    </section>
+
+    <!-- Контакты -->
+    <section class="sec sec--dark" id="kontakty" aria-labelledby="kont-h">
+      <div class="wrap kont">
+        <div class="kont__info">
+          <h2 id="kont-h">Как нас найти</h2>
+          <dl class="dl">
+            <div><dt>Адрес</dt><dd>Ломоносов, Первомайская ул., 3Б<br><span class="muted">напротив входа в парк Ораниенбаум</span></dd></div>
+            <div><dt>Часы работы</dt><dd>ежедневно 11:00–23:00 <span class="status" data-open-status data-open="11:00" data-close="23:00"></span></dd></div>
+            <div><dt>Телефоны</dt><dd><a href="tel:+79119207979">+7 (911) 920-79-79</a><br><a href="tel:+78124220692">+7 (812) 422-06-92</a></dd></div>
+            <div><dt>ВКонтакте</dt><dd><a href="https://vk.com/yivanychaa" target="_blank" rel="noopener">vk.com/yivanychaa</a></dd></div>
+            <div><dt>Оплата</dt><dd>карта, QR-код, наличные</dd></div>
+          </dl>
+          <div class="btnrow">
+            <a class="btn btn--call" href="tel:+79119207979">Позвонить</a>
+            <a class="btn btn--ghost" href="https://yandex.ru/maps/?rtext=~59.915987,29.763498&amp;rtype=auto" target="_blank" rel="noopener">Построить маршрут</a>
+          </div>
+        </div>
+        <div class="kont__map">
+          <iframe src="https://yandex.ru/map-widget/v1/org/u_ivanycha/212209526785/?ll=29.763498%2C59.915987&amp;z=16" title="Кафе «У Иваныча» на Яндекс Картах" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <p class="foot__logo">У Иваныча</p>
+      <p>Ломоносов, Первомайская ул., 3Б · <a href="tel:+79119207979">+7 (911) 920-79-79</a></p>
+      <p class="demo">Демо-версия сайта для владельца кафе. Это не официальный сайт: актуальные цены и наличие уточняйте по телефону.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
