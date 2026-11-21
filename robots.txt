@@ -1,2 +1,20 @@
+# Демо для владельца: поисковикам запрещено, роботам превью ссылок (ВК, Телеграм, WhatsApp) разрешено.
+# TODO: при официальном запуске оставить только "User-agent: *" и "Allow: /"
+
+User-agent: vkShare
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
 User-agent: *
 Disallow: /
