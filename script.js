@@ -1,6 +1,46 @@
-// Кафе «У Иваныча»: вкладки меню и статус «открыто / закрыто».
+// Кафе «У Иваныча»: шапка с меню разделов, вкладки меню и статус «открыто / закрыто».
 (() => {
   'use strict';
+
+  /* ---------- Шапка: ссылки в строку или кнопка ☰ ---------- */
+  // Старым браузерам без всплывающих окон (popover) подгружаем замену, остальным — ничего
+  if (!Object.hasOwn(HTMLElement.prototype, 'popover')) {
+    const s = document.createElement('script');
+    s.src = 'vendor/popover-polyfill-0.7.3.min.js';
+    document.head.append(s);
+  }
+
+  const header = document.querySelector('.top');
+  const row = header && header.querySelector('.top__in');
+  const navList = document.getElementById('top-menu');
+  if (header && row && navList) {
+    const isOpen = () => navList.matches(':is(:popover-open, .\\:popover-open)');
+    let lastWidth = 0;
+
+    // Пробуем показать ссылки в строку; не влезли — возвращаем кнопку ☰.
+    // Свёрнутую шапку перемеряем только когда она стала шире, иначе вёрстка дёргается.
+    function layout() {
+      const width = row.clientWidth;
+      const wide = header.classList.contains('is-wide');
+      if (!wide && width <= lastWidth) return;
+      lastWidth = width;
+      const wasOpen = !wide && isOpen();
+      header.classList.add('is-wide');
+      navList.removeAttribute('popover');
+      if (row.scrollWidth > row.clientWidth) {
+        header.classList.remove('is-wide');
+        navList.setAttribute('popover', 'auto');
+        if (wasOpen) navList.showPopover();
+      }
+    }
+    new ResizeObserver(layout).observe(row);
+    new ResizeObserver(layout).observe(navList);
+
+    // Ссылки ведут на разделы этой же страницы: после нажатия закрываем меню
+    navList.addEventListener('click', e => {
+      if (e.target.closest('a') && navList.hasAttribute('popover') && isOpen()) navList.hidePopover();
+    });
+  }
 
   /* ---------- Вкладки меню ---------- */
   const tablist = document.querySelector('[role="tablist"]');
